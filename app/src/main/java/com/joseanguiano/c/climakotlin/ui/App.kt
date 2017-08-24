@@ -12,7 +12,8 @@ import com.joseanguiano.c.climakotlin.extensions.DelegatesExt
 class App : Application() {
 
     companion object {
-        var instance: App by DelegatesExt.notNullSingleValue()
+//        var instance: App by DelegatesExt.notNullSingleValue()
+        lateinit var instance: App
     }
 
     override fun onCreate() {
